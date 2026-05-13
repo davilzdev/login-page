@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SD DIGITAL</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+
 </head>
 <body>
 <!--  Tela de Login-->
@@ -12,15 +14,15 @@
     <h1>Faça o seu login</h1>
     <div class="barra-horizontal"></div>
 
-    <form>
+    <form onsubmit="entrar(event)">
       <div class="input-box">
         <p class="email1">Seu email</p>
-        <input type="email" required>
+        <input type="email" placeholder="Digite seu email" required>
       </div>
 
       <div class="input-box">
         <p class="senha">Sua senha</p>
-        <input type="password" required>
+        <input type="password" placeholder="Digite sua senha" required>
       </div>
 
       <button type="submit" class="btn-login">
@@ -33,6 +35,25 @@
       <a href="criar_conta.html">Criar conta</a>
     </div>
   </div>
+
+<!--  Rodapé -->  
+  <footer class="rodape">
+  <div class="rodape-conteudo">
+    <h2>SD DIGITAL</h2>
+
+    <p>Sua solução digital em um só lugar</p>
+
+    <div class="rodape-links">
+      <a href="#">Início</a>
+      <a href="#">Produtos</a>
+      <a href="#">Contato</a>
+    </div>
+
+    <p class="copyright">
+      © 2026 SD DIGITAL - Todos os direitos reservados.
+    </p>
+  </div>
+</footer>
     
 </body>
 </html>
